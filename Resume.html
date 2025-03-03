@@ -7,9 +7,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
             padding: 20px;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
             max-width: 800px;
@@ -18,20 +22,32 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border: 2px solid #333;
-            text-align: center;
+
         }
-        h1, h2 {
-            color: #164c89;
+
+        .header {
+            text-align: center;
+
+        }
+
+        h1,h2 {
+            color: #284e95;
+
         }
         h3 {
             color: green;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        h1 {
+            text-align: center;
         }
-        li {
-            margin-bottom: 10px;
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            display: inline-block;
+            text-align: left;
+        }
+        .contact{
+            text-align: center;
         }
         .contact a {
             text-decoration: none;
@@ -39,7 +55,7 @@
         }
         .profile-image {
             display: block;
-            margin: 0 auto;
+            margin: 0 auto 20px;
             width: 150px;
             height: 150px;
             border-radius: 50%;
@@ -52,7 +68,7 @@
     <div class="container">
         <img src="./me.jpg" alt="Seyedmostafa Seyedi" class="profile-image">
         <h1>Seyedmostafa Seyedi</h1>
-        <p>Turin, Italy — <a href="tel:+393271395703">+39 327 139 5703</a> — <a href="mailto:se.mostafa.seyedi@gmail.com">se.mostafa.seyedi@gmail.com</a></p>
+        <p class="header">Turin, Italy — <a href="tel:+393271395703">+39 327 139 5703</a> — <a href="mailto:se.mostafa.seyedi@gmail.com">se.mostafa.seyedi@gmail.com</a></p>
         <p class="contact"><a href="https://www.linkedin.com/in/seyedmostafa-seyedi/">LinkedIn</a> | <a href="https://github.com/Mostafa-Seyedi">GitHub</a></p>
         
         <h2>Work Experience</h2>
@@ -72,14 +88,20 @@
             <li>Designed and built a hotel booking website using modern web technologies.</li>
             <li>Focused on UX/UI improvements and backend optimizations.</li>
         </ul>
-        <hr>
+        
         <h2>Education</h2>
+        
         <h3>Polytechnic University of Turin (Sep 2020 – Jan)</h3>
-        <p>BSc in Computer Engineering — Turin, Italy</p>
+        <ul>
+            <li>BSc in Computer Engineering — Turin, Italy</li>
+        </ul>
         
         <h3>Persian Gulf University (2017 – 2018)</h3>
-        <p>Associate Degree — Iran</p>
-        <hr>
+        <ul>
+            <li>Associate Degree in Industrial Engineering — Iran</li>
+        </ul>
+
+        
         <h2>Projects</h2>
         <h3>Chatbot Assistant (Nov 2024 – Dec 2024)</h3>
         <ul>
@@ -97,14 +119,14 @@
         <ul>
             <li>Designed an interactive mobile app prototype using Figma.</li>
         </ul>
-        <hr>
+        
         <h2>Skills</h2>
         <ul>
             <li><strong>Programming:</strong> Python, Django, NLP, AI Chatbots, CSS, HTML, Java, SQL (MySQL)</li>
             <li><strong>Tools:</strong> MATLAB, Linux, CLion, VS Code, PyCharm, Figma, WebFlow</li>
             <li><strong>Languages:</strong> English (C1, IELTS 6.5), Italian (A2), Persian (Native)</li>
         </ul>
-        <hr>
+        
         <h2>Certifications</h2>
         <ul>
             <li>Django Web Framework – Coursera (Sep 2024 – Nov 2024)</li>
